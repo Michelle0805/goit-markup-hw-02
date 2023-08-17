@@ -1,6 +1,7 @@
 body {
   color: var(--slate);
   font-family: 'roboto', sans-serif;
+  font-size: 16px;
 }
 
 :root {
@@ -11,6 +12,7 @@ body {
   --orange: #e7791f;
   --ocean: #404bbf;
   --cornflower: #e7e9fc;
+  --white: #fff;
 }
 .header-page a {
   color: var(--slate);
@@ -25,15 +27,35 @@ body {
   color: blue;
 }
 
-a {
-  text-decoration: none;
+.header-page-nav .link {
+  color: var(--navy-blue);
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+}
+
+.header-page-address .link {
+  color: var(--slate);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+}
+
+.space {
+  white-space: nowrap;
 }
 
 ul {
   list-style-type: none;
 }
+
+a {
+  text-decoration: none;
+}
+
 h1 {
-  color: #fff;
+  color: var(--white);
   text-align: center;
   font-size: 56px;
   font-weight: 700;
@@ -45,6 +67,11 @@ h1 {
 }
 .main-hero-button {
   padding: 16px 32px;
+  display: inline-flex;
+  border-radius: 4px;
+  color: white;
+  background: var(--iris, #4d5ae5);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   gap: 10px;
   cursor: pointer;
 }
@@ -76,7 +103,6 @@ p {
 }
 footer {
   background: var(--navy-blue);
-  flex-shrink: 0;
 }
 
 footer p {
@@ -86,46 +112,29 @@ footer p {
   line-height: 24px;
   letter-spacing: 0.32px;
 }
-.header-web {
-  color: var(--iris);
-  font-family: Raleway;
+
+.header-web,
+.header-studio,
+.footer-web,
+.footer-studio {
+  font-family: 'Raleway', sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 21px;
   letter-spacing: 0.54px;
   text-transform: uppercase;
-  text-decoration: none;
+}
+
+.header-web,
+.footer-web {
+  color: var(--iris);
 }
 .header-studio {
   color: var(--navy-blue);
-  font-family: 'Raleway', sans-serif;
-  font-size: 18px;
-  font-weight: 800;
-  line-height: 21px; /* 116.667% */
-  letter-spacing: 0.54px;
-  text-transform: uppercase;
-  text-decoration: none;
 }
 
-.footer-web {
-  color: var(--iris);
-  font-family: 'Raleway', sans-serif;
-  font-size: 18px;
-  font-weight: 800;
-  line-height: 21px;
-  letter-spacing: 0.54px;
-  text-transform: uppercase;
-  text-decoration: none;
-}
 .footer-studio {
   color: var(--cloud);
-  font-family: 'Raleway', sans-serif;
-  font-size: 18px;
-  font-weight: 800;
-  line-height: 21px; /* 116.667% */
-  letter-spacing: 0.54px;
-  text-transform: uppercase;
-  text-decoration: none;
 }
 
 /* portfolio */
