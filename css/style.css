@@ -13,6 +13,7 @@ body {
   --ocean: #404bbf;
   --cornflower: #e7e9fc;
   --white: #fff;
+  --blue: #0000ff;
 }
 .header-page a {
   color: var(--slate);
@@ -20,21 +21,21 @@ body {
 
 .header-page a:hover,
 .header-page a:focus {
-  color: var(--orange);
+  color: var(--blue);
 }
 
 .header-page a:active {
-  color: blue;
+  color: var(--iris);
 }
 
-.header-page-nav .link {
+.header-page-menu-item {
   color: var(--navy-blue);
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.32px;
 }
 
-.header-page-address .link {
+.header-page-address {
   color: var(--slate);
   font-style: normal;
   font-weight: 400;
@@ -42,7 +43,7 @@ body {
   letter-spacing: 0.32px;
 }
 
-.space {
+.projects-list-item-title {
   white-space: nowrap;
 }
 
@@ -62,18 +63,26 @@ h1 {
   line-height: 60px;
   letter-spacing: 1.12px;
 }
-.main-page > .main-hero {
+.main-page > .main-page-hero {
   background: var(--navy-blue);
 }
-.main-hero-button {
+.main-page-hero-button {
   padding: 16px 32px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.64px;
   display: inline-flex;
   border-radius: 4px;
-  color: white;
-  background: var(--iris, #4d5ae5);
+  color: var(--cloud);
+  background: var(--iris);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   gap: 10px;
   cursor: pointer;
+}
+
+.main-page-hero-button:hover {
+  color: var(--cloud);
+  background: var(--blue);
 }
 h2 {
   color: var(--navy-blue);
@@ -87,7 +96,6 @@ h2 {
 h3 {
   width: 264px;
   font-size: 20px;
-  font-style: normal;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.4px;
@@ -95,7 +103,6 @@ h3 {
 }
 p {
   width: 264px;
-  font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.32px;
@@ -113,16 +120,20 @@ footer p {
   letter-spacing: 0.32px;
 }
 
-.header-web,
-.header-studio,
-.footer-web,
-.footer-studio {
+.logo {
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 21px;
   letter-spacing: 0.54px;
   text-transform: uppercase;
+}
+
+.header-web:hover,
+.header-studio:hover,
+.footer-web:hover,
+.footer-studio:hover {
+  color: var(--blue);
 }
 
 .header-web,
@@ -139,23 +150,20 @@ footer p {
 
 /* portfolio */
 
-.portfolio .li {
-  display: inline;
-  padding: 12px 24px;
-  background: var(--cloud);
-}
-
-.portfolio a {
+.portfolio-list button {
+  text-align: center;
   color: var(--iris);
-}
-
-.li:hover {
-  background: var(--ocean);
-  color: var(--cloud);
-}
-
-.li a:hover {
-  background: var(--ocean);
-  color: var(--cloud);
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+  border-radius: 4px;
   border: 1px solid var(--cornflower);
+  background: var(--cloud);
+  list-style-type: none;
+}
+
+.portfolio-list button:hover {
+  color: var(--cloud);
+  background: var(--iris);
+  cursor: pointer;
 }
